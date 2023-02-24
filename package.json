@@ -1,5 +1,5 @@
 {
-  "homepage":"https://깃허브ID.github.io/webpack_react/",
+  "homepage": "https://깃허브ID.github.io/webpack_react/",
   "name": "webpack_react",
   "version": "1.0.0",
   "description": "",
@@ -9,7 +9,7 @@
     "build": "webpack --mode=production  --progress",
     "start": "webpack --mode=development  --progress",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -38,5 +38,12 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paryuyu/webpack_react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paryuyu/webpack_react/issues"
   }
 }
