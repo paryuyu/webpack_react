@@ -7,8 +7,8 @@ module.exports = (env, argv) => {
     const prod = argv.mode === "production";
     
     return {
-        mode: "development", 
-        devtool: "eval-cheap-source-map", 
+        mode:prod? "production" : "development", 
+        devtool: prod ? "hidden-source-map" : "eval-cheap-source-map", //소스맵 확인 여부
 
         entry: "./src/index.tsx", // 시작점 경로를 지정하는 옵션, 해당 파일부터 필요한 모듈 로딩 및 하나의 파일로 묶기
         output: { // webpack이 번들링 결과물을 위치할 경로 및 이름
