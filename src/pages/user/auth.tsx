@@ -1,4 +1,4 @@
 
 export default function AuthPage() {
-    return ( <>auth</> );
+    return ( <p>auth</p> );
 }
