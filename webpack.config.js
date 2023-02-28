@@ -12,8 +12,11 @@ module.exports = (env, argv) => {
 
         entry: "./src/index.tsx", // 시작점 경로를 지정하는 옵션, 해당 파일부터 필요한 모듈 로딩 및 하나의 파일로 묶기
         output: { // webpack이 번들링 결과물을 위치할 경로 및 이름
+            
             path: path.join(__dirname, "/dist"),
             filename: "bundle.js",
+            publicPath:'/'
+            
         },
         devServer: { //실시간으로 개발 모드로 개발하는 중 변경사항이 프로젝트에 반영
             port: 3000,

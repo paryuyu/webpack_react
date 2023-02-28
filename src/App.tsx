@@ -45,8 +45,8 @@ function App() {
           </Route>
 
           {/**domain project로 관리되는 영역 /{domain project name}/ */}
-          <Route path="/:projectName" element={<DomainProjectLayout/>}>
-            <Route path="/:projectName/analytics/dashboard" element={<Dashboard/>}/>
+          <Route path="/:projectName" element={<DomainProjectLayout />}>
+            <Route path="/:projectName/analytics/dashboard" element={<Dashboard />} />
           </Route>
         </Route>
       </Routes>
